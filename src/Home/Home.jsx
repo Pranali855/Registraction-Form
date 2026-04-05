@@ -57,7 +57,7 @@ function Home() {
  }
   return (
     <div className='form'>
-        <h1>"Ragistration Form" {form.name}</h1>
+        <h1>Ragistration Form </h1>
         <p>Hello {form.name || "User"}❤️ You are {form.age || "User"} years old.</p>
 
         <div className="1">
