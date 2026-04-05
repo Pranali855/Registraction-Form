@@ -72,12 +72,12 @@ function Home() {
         <select onChange={(e)=>{
             setForm({...form,city:e.target.value})
         }} value={form.city} className='input'>
-            <option >Select your city</option>
-            <option value="loni">loni</option>
-            <option value="nagpur">nagpur</option>
-            <option value="pune">pune</option>
-            <option value="mumbai">mumbai</option>
-            <option value="chennai">chennai</option>
+            <option>Select your city</option>
+    <option value="delhi">Delhi</option>
+    <option value="bangalore">Bangalore</option>
+    <option value="hyderabad">Hyderabad</option>
+    <option value="kolkata">Kolkata</option>
+    <option value="jaipur">Jaipur</option>
         </select>
     </div>
 
@@ -135,6 +135,28 @@ function Home() {
        }}
 
        />hindi
+       <input 
+  type='checkbox' 
+  value="science" 
+  checked={form.subject.includes("science")}
+  onChange={(e)=>{
+    const val=e.target.value;
+    if(form.subject.includes(val)){
+        setForm({
+            ...form,
+            subject:form.subject.filter(
+                (subject)=>subject!==val
+            )
+        })
+    }else{
+     setForm({
+            ...form,
+        subject:[...form.subject,val]
+     })
+    }
+  }}
+/> Science
+
        <input type='checkbox' value="hindi" checked={form.subject.includes("hindi")}
               onChange={(e)=>{
         const val=e.target.value;
