@@ -1,0 +1,86 @@
+/* General form container */
+.form {
+  max-width: 530px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #009688; /* Teal background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.form h1 {
+  text-align: center;
+  color: #ffffff; /* White text */
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.form p {
+  margin: 10px 0;
+  color: #e0f2f1; /* Light teal text */
+}
+
+/* Input fields */
+.input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #004d40; /* Dark teal border */
+  border-radius: 6px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #333333;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #00796b; /* Focus teal */
+  outline: none;
+}
+
+/* Radio and checkbox labels */
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Error text */
+.error-text {
+  color: #ff5252; /* Bright red for errors */
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Buttons */
+.Button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  background: #004d40; /* Dark teal button */
+  color: #ffffff;
+  border: 2px solid #004d40;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #00796b; /* Hover teal */
+  color: #ffffff;
+}
+
+.btn-disabled {
+  background: #b2dfdb; /* Muted teal */
+  color: #666666;
+  cursor: not-allowed;
+}
