@@ -37,21 +37,20 @@
   outline: none;
 }
 
-/* Radio and checkbox labels */
+
 .form input[type="radio"],
 .form input[type="checkbox"] {
   margin-right: 6px;
 }
 
-/* Error text */
 .error-text {
-  color: #ff5252; /* Bright red for errors */
+  color: #ff5252;
   font-size: 14px;
   margin-top: 10px;
   text-align: center;
 }
 
-/* Buttons */
+
 .Button {
   display: flex;
   justify-content: space-between;
@@ -62,8 +61,7 @@
   flex: 1;
   padding: 10px;
   margin: 0 5px;
-  background: #004d40; /* Dark teal button */
-  color: #ffffff;
+  background: #004d40;
   border: 2px solid #004d40;
   border-radius: 6px;
   font-size: 15px;
@@ -72,12 +70,12 @@
 }
 
 .btn:hover {
-  background: #00796b; /* Hover teal */
+  background: #00796b;
   color: #ffffff;
 }
 
 .btn-disabled {
-  background: #b2dfdb; /* Muted teal */
+  background: #b2dfdb;
   color: #666666;
   cursor: not-allowed;
 }
