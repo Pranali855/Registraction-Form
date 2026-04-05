@@ -1,33 +1,30 @@
-/* General form container */
+
 .form {
   max-width: 530px;
   margin: 40px auto;
   padding: 20px;
-  background: #009688; /* Teal background */
+  background: #009688; 
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
   font-family: Arial, sans-serif;
 }
 
-/* Heading */
 .form h1 {
   text-align: center;
-  color: #ffffff; /* White text */
+  color: #ffffff; 
   margin-bottom: 20px;
 }
-
-/* Paragraphs */
 .form p {
   margin: 10px 0;
-  color: #e0f2f1; /* Light teal text */
+  color: #e0f2f1;
 }
 
-/* Input fields */
+
 .input {
   width: 90%;
   padding: 10px;
   margin: 8px 0;
-  border: 1px solid #004d40; /* Dark teal border */
+  border: 1px solid #004d40; 
   border-radius: 6px;
   font-size: 14px;
   background: #ffffff;
@@ -36,7 +33,7 @@
 }
 
 .input:focus {
-  border-color: #00796b; /* Focus teal */
+  border-color: #00796b; 
   outline: none;
 }
 
