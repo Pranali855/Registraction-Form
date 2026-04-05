@@ -13,20 +13,20 @@ function Home() {
  });
 
  useEffect(()=>{
-    if(!!form.name && !!form.age){
-        return
-    }else if(form.name.length>0 && form.name.length<3){
-        setForm({...form,error:"name must be atleast 3 character long"})
-    }else if(form.name.length>20){
-        setForm({...form,error:"name must be less then 20 character long"})
-    }else if(form.age<18){
-        setForm({...form,error:"Age must be atleast 18 years old"})
-    }else if(form.age>60){
-        setForm({...form,error:"Age must be less then 60 years old"})
-    }else{
-        setForm({...form,error:""})
-    
-    }
+   if (!!form.name && !!form.age) {
+    return;
+} else if (form.name.length > 0 && form.name.length < 3) {
+    setForm({ ...form, error: "Name must be at least 3 characters long" });
+} else if (form.name.length > 20) {
+    setForm({ ...form, error: "Name must be less than 20 characters long" });
+} else if (form.age < 20) {
+    setForm({ ...form, error: "Age must be at least 20 years old" });
+} else if (form.age > 60) {
+    setForm({ ...form, error: "Age must be less than 60 years old" });
+} else {
+    setForm({ ...form, error: "" });
+}
+
  },[form.name,form.age,form.error])
 
 
